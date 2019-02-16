@@ -3,6 +3,8 @@ var color2 = document.getElementById("second-color");
 var body = document.querySelector("body");
 var div = document.querySelector("p");
 
+setGradientColors();
+
 function setGradientColors(){
   body.style.background = "linear-gradient(to right,"+color1.value+","+color2.value+")";
   div.textContent = body.style.background + ";";
